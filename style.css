@@ -1,0 +1,308 @@
+/* Thiết lập chung cho toàn trang */
+body {
+    background: linear-gradient(135deg,#e3f2fd,#ffffff); /* Màu nền nhẹ nhàng */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* kiểu chữ cơ bản cho nội dung và thanh điều hướng */
+p,a {
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Phần Tiêu đề (Header) */
+.dau-trang{
+     background: linear-gradient( to bottom, #269dc1, #0e4189); 
+    color: rgba(255, 255, 255, 0.9); /* Màu chữ [cite: 20] */
+    padding: 60px 34px 50px;
+    text-align: center;
+    border-bottom: rgb(255, 255, 255) solid 1px;
+}
+
+/* căn chỉnh hiệu ứng chữ tiêu đề chung cho từng mục */
+h2 {
+   font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+/* Hiệu ứng tiêu đề của báo tường */
+.dau-trang h1{
+  font-family: 'Black Ops One', cursive;
+  font-size: 58px;
+  letter-spacing: 4px;
+  line-height: 1.3;
+  color: #fffc54;
+  font-weight: 900;
+}
+
+/* Nội dung phụ kế tiêu đề */
+.dau-trang p {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  color: rgb(237, 248, 114);
+    letter-spacing: 2px;
+}
+
+/* Hiệu ứng các nút điều hướng */
+.thanh-dieu-huong a{
+     font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    background: linear-gradient( to right, #3da1d3, #1b6bcc); 
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    padding: 12px 3% 12px;
+    margin: 16px 1.5% 16px;
+    border-radius: 20px;
+}
+
+.thanh-dieu-huong {
+     background: linear-gradient( to bottom,#1f73cd, #052874ea); 
+    display: flex;
+    justify-content: center;
+    position: sticky;   /* Tự dính */
+    top: 0px;           /* Khi chạm đỉnh màn hình thì dính */ 
+  }
+
+/* Hiệu ứng khi di chuột vào nút điều hướng*/
+.thanh-dieu-huong a:hover {
+    background: linear-gradient( to right, #fefdae, #f3f77a); 
+    color: #9d5e00fb;
+    box-shadow: #003366;
+}
+
+/* căn giữa cho ảnh nền */
+.anh-dau-trang {
+    text-align: center;
+}
+
+.anh-dau-trang img{
+    margin: 20px 20px 10px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Phần Nội dung (Content) - Căn giữa trang */
+#content, .goc-anh, .goc-video{
+    width: 80%;
+    margin: 20px auto; /* Căn giữa màn hình [cite: 19] */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+
+/* Định dạng cho từng bài viết */
+.bai-viet {
+    border: 1px solid #ddd; /* Đường viền [cite: 20] */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-left: 6px solid #9a0c0c; /* Trang trí viền trái */
+}
+
+/* Tiêu đề bài viết */
+.tieu-de-bai {
+    color: #c58a0b; /* Màu đỏ nổi bật */
+    font-size: 24px;
+}
+
+/* Tên tác giả */
+.tac-gia {
+    font-style: italic;
+    text-align: right;
+    color: #666;
+}
+
+/* Định dạng Góc ảnh */
+.goc-anh {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+/* Màu thẻ tiêu đề của từng phần */
+.goc-anh h2, .goc-video h2, .comment-box h2{
+  color: #9a0c0c;
+}
+
+/* căn chỉnh bố cục hình ảnh bằng flex box */
+.kho-anh {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap:wrap ;
+}
+
+.anh {
+    width: 40%;
+    text-align: center;
+    margin-top: 10px 20px 10px;
+}
+
+/* Căn chỉnh hiệu ứng cho từng ảnh hoạt động đoàn */
+.anh img{
+  width: 100%;
+  border: #aa4742e6 solid 2px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+/* Kiểu chữ nội dung ở dưới ảnh hoạt động đoàn*/
+.anh p {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 0px;
+}
+
+
+.anh-minh-hoa {
+    margin: 10px;
+    border: 3px solid #eee;
+    border-radius: 5px;
+    width: 30%; /* Ảnh chiếm 30% chiều rộng để xếp hàng ngang */
+}
+
+/* Căn giữa phần video */
+.goc-video {
+  text-align: center;
+}
+
+.goc-video video{
+    width: 100%
+}
+
+/* Định dạng Góc Bình luận (Form) */
+.goc-binh-luan {
+    background-color: #e6f2ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+/* code của Bảo----------------------------------------------------------------------------------------------------- */
+
+
+
+/* COMMENT BOX */
+.comment-box {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  background:#fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+.comment-box h2 {
+  text-align: center;
+  color: #9a0c0c;
+}
+
+.comment-box p{
+  font-weight: 500;
+  text-align: center;
+}
+
+.comment-box input,
+.comment-box textarea {
+  width: 100%;
+  padding: 6px;
+  margin: 6px 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-box button {
+  width: 100%;
+  padding: 8px;
+  background: linear-gradient( to right, #4ec0e6, #1e2ed7);
+  color: rgba(204, 255, 251, 0.868);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-box button:hover {
+    background: linear-gradient( to right, #ffa34d, #d14512); 
+    color: #fffffffb;
+    box-shadow: #5d5407;
+}
+
+
+/* FOOTER */
+.footer {
+  background: linear-gradient( to bottom, #229dca, #1751a3); 
+  position: relative;
+  font-size: 14px;
+  margin-top: 40px;
+  color: #ffffff98;
+}
+
+/* Sóng */
+.wave {
+  width: 100%;
+  height: 90px;
+  display: block;
+}
+
+/* Nội dung footer */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px 60px;
+}
+
+.footer-column {
+  padding: 0 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-column h2 {
+  color: #bdbf2c;
+}
+
+.footer-column:not(:last-child) {
+  border-right: 1px solid rgba(255,255,255,0.4);
+}
+
+.footer-column p {
+  margin: 4px 0;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #d6a32bf1;
+}
+
+.footer-column a:hover {
+  color: #e7773af1;
+}
+
+.fb-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 2px solid #ffffff8e;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #d0e4ff9a;
+  font-size: 13px;
+}
+
+/* Logo */
+.footer-logo {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.footer-logo img {
+  width: 60px;
+}
